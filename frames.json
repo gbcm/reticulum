@@ -98,5 +98,54 @@
         },
         "data_type": "frame",
         "aptitude": {}
+    },
+    {
+        "source": "RET",
+        "name": "Nicrophorus",
+        "image_url": "",
+        "y_position":"52",
+        "mechtype": [
+            "Support","Controller"
+        ],
+        "description":"<i>The Nicrophorus is designed to orchestrate the mapping of alien terrain through a swarm of drones. It can protect and care for these drones like the young of its namesake, the Cradleian Burying Beetle.</i>",
+        "mounts": [
+            "Aux/Aux",
+            "Main"
+        ],
+        "stats": {
+            "size": 1,
+            "armor": 1,
+            "hp": 8,
+            "evasion": 7,
+            "edef": 10,
+            "heatcap": 5,
+            "repcap": 8,
+            "sensor_range": 5,
+            "tech_attack": 1,
+            "save": 10,
+            "speed": 4,
+            "sp": 8
+        },
+        "traits": [
+            {
+                "name": "Repair Printer",
+                "description": "During a Rest the Nicrophorus can repair 2 damaged Weapons or 2 damaged Systems for 1 Repair"
+            }
+        ],
+        "core_system": {
+            "name": "Drone Network",
+            "description": "<i></i>",
+            "passive_name": "Drone Network",
+            "passive_effect": "Spaces within Burst 5 of any of the Nicrophorus’ Drones are considered to be within its Sensor range.",
+            "active_name": "Network Mapping",
+            "active_effect": "As a Protocol all Targets of your choice that are within Sensors and Line of Sight receive Lock-On",
+            "tags": [
+                {
+                    "id": "tg_protocol"
+                }
+            ]
+        },
+        "data_type": "frame",
+        "aptitude": {}
     }
 ]

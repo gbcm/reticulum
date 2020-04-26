@@ -89,5 +89,89 @@
         "description": "",
         "data_type": "system",
         "aptitude": {}
+      },
+      {
+        "name": "Poison Drone",
+        "type": "System",
+        "sp": 2,
+        "tags": [{"id": "tg_drone"}],
+        "source": "RET",
+        "license": "Nicrophorus",
+        "license_level": 1,
+        "effect": "<b>Poison Drone (SIZE 1/2, HP 5, EVASION 10, E-DEFENSE 10, TAGS: DRONE)</b><br><br>This poison drone may be deployed to any free space within sensors and line of sight. Upon deployment, it targets a Burst 2 area centered on itself and you gain the Crop Dusting  reaction (usable any number of times a round).<br>You may recall or redeploy the poison drone as a quick action. Unless recalled or destroyed, it remains deployed until the end of the scene.<br><br><b>Crop Dusting<br>Reaction, 1/round<br>Trigger:</b>A hostile character starts movement in or enters the area targeted by your poison drone.<br><b>Effect:</b>The hostile character must make an Agility Save or suffer 1 Burn and Poisoned",
+        "description": "",
+        "data_type": "system",
+        "aptitude": {}
+      },
+      {
+        "name": "Bacterial ECM",
+        "type": "Tech",
+        "sp": 2,
+        "tags": [{"id": "tg_unique"}],
+        "source": "RET",
+        "license": "Nicrophorus",
+        "license_level": 1,
+        "effect": "You gain +1 accuracy on tech attacks against characters with the Poisoned condition.<br>If you roll more than a 20 on a Tech Attack against a character with the Poisoned condition they suffer 3 Heat.",
+        "description": "<i>The pseudobacteria of Poison can be tuned to assist in electronic countermeasure activity.</i>",
+        "data_type": "system",
+        "aptitude": {}
+      },
+      {
+        "name": "Bell Jar Protocol",
+        "type": "Tech",
+        "sp": 2,
+        "tags": [{
+            "id": "tg_unique"
+          },
+          {
+            "id": "tg_quick_tech"
+          },
+          {
+            "id": "tg_invade"
+          }
+        ],
+        "source": "RET",
+        "license": "Nicrophorus",
+        "license_level": 2,
+        "effect": {
+          "effect_type": "Tech",
+          "activation": "Quick",
+          "option_set": "Invade",
+          "options": [{
+              "name": "Nanite Mire",
+              "detail": "If the target is in difficult or dangerous terrain, or adjacent to a piece of terrain with hitpoints, they suffer 2 Burn and Poisoned"
+            },
+            {
+              "name": "Bacterial Carapace",
+              "detail": " If the target is suffering the Poisoned Condition, it becomes Impaired and Slowed until the Poisoned Condition is Cleared."
+            }
+          ]
+        },
+        "description": "",
+        "data_type": "system",
+        "aptitude": {}
+      },
+      {
+        "name": "Cradelization  Drone",
+        "type": "Tech",
+        "sp": 2,
+        "tags": [{"id": "tg_drone"}],
+        "source": "RET",
+        "license": "Nicrophorus",
+        "license_level": 3,
+        "effect": {
+          "effect_type": "Drone",
+          "size": 0.5,
+          "hp": 5,
+          "edef": 10,
+          "evasion": 10,
+          "detail": "This cradelization drone may be deployed to any free space within sensors and line of sight. While deployed you have access to the Terrain Processing Protocols, you may only use one Terrain Processing Protocol per turn.<br>You may recall or redeploy the cradelization drone as a quick action. Unless recalled or destroyed, it remains deployed until the end of the scene.<br><br><b>Terrain Processing: Levelling</b><br>As a Protocol you may target a space containing difficult terrain and a character both within 2 spaces of the Cradelization Drone. The difficult terrain is removed, and the target character may clear the Slowed or Immobilized Conditions<br><br><b>Terrain Processing: Solidity</b><br>As a Protocol you may target a space containing terrain with hitpoints and a character both within 2 spaces of the Cradelization Drone. The terrain takes 5 AP kinetic damage, and the target character gains 4 Overshield",
+          "tags": [{
+            "id": "tg_drone"
+          }]
+        },
+        "description": "",
+        "data_type": "system",
+        "aptitude": {}
       }
 ]

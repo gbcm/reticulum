@@ -37,5 +37,45 @@
             "Heavy",
             "Superheavy"
         ]
+    },
+    {
+        "name": "Mobile Hive Deployment",
+        "sp": 2,
+        "applied_to": [
+            "CQB",
+            "Cannon",
+            "Rifle",
+            "Nexus",
+            "Launcher"
+        ],
+        "applied_string": "Main or Auxiliary Ranged weapon",
+        "source": "RET",
+        "license": "Nicrophorus",
+        "license_level": 3,
+        "effect": {
+            "effect_type": "Drone",
+            "size": 0.5,
+            "hp": 5,
+            "edef": 10,
+            "evasion": 10,
+            "detail": "This modifies one Main or Auxiliary Ranged weapon that does not already have the Drone tag,  it gains the Drone tag.<br>The modified weapon may be used to attack as normal, or deployed as a DRONE with the above profile.<br>This Modified weapon can be deployed to a free space within SENSORS and line of sight as a free action, where it becomes a stationary, hovering DRONE. Once deployed, you may still use it for SKIRMISH and BARRAGE attacks as though it is still a  weapon, but with line of sight and RANGE traced from its location.<br>You may recall or redeploy the modified weapon as a quick action. Until recalled or destroyed, it remains deployed until the end of the scene. If destroyed, it follows the rules for destroyed DRONES and can’t be used until repaired.",
+            "tags": [
+                {
+                    "id": "tg_drone"
+                }
+            ]
+        },
+        "description": "",
+        "data_type": "mod",
+        "aptitude": {},
+        "tags": [
+            {
+                "id": "tg_mod"
+            }
+        ],
+        "restricted_mounts": [
+            "Auxiliary",
+            "Main"
+        ]
     }
 ]
