@@ -1,0 +1,102 @@
+[
+    {
+        "source": "RET",
+        "name": "Cryptocerus",
+        "image_url": "",
+        "y_position":"50",
+        "mechtype": [
+            "Defender","Controller"
+        ],
+        "description":"<i>The Cryptocerus frame is named for the wood-roach of Cradle, and is as durable as its namesake.</i>",
+        "mounts": [
+            "Flex",
+            "Heavy"
+        ],
+        "stats": {
+            "size": 2,
+            "armor": 0,
+            "hp": 10,
+            "evasion": 6,
+            "edef": 9,
+            "heatcap": 5,
+            "repcap": 5,
+            "sensor_range": 10,
+            "tech_attack": 0,
+            "save": 11,
+            "speed": 3,
+            "sp": 8
+        },
+        "traits": [
+            {
+                "name": "Guardian",
+                "description": "Allied characters can use the Cryptocerus as Hard Cover"
+            },
+            {
+                "name": "Active Terrain Shielding",
+                "description": "The Cryptocerus cannot gain Hard Cover from terrain. When it would otherwise be eligible for Hard Cover from an Attack it gains Resistance against all Damage from the Attack and the terrain that would grant Cover also takes the full Damage of the attack. "
+            }
+        ],
+        "core_system": {
+            "name": "Cradelization Engine",
+            "description": "<i>Releasing a massive quantity of construction nanites, the Cryptocerus can manipulate the battlefield to its advantage</i>",
+            "active_name": "Active Cradelization",
+            "active_effect": "As a Protocol the Cryptocerus can move any two pieces of size 1 terrain, or one piece of size 2 terrain 4 spaces. After activating this Protocol it can be activated for the remainder of the scene without CP cost.",
+            "tags": [
+                {
+                    "id": "tg_protocol"
+                }
+            ]
+        },
+        "data_type": "frame",
+        "aptitude": {}
+    },
+    {
+        "source": "RET",
+        "name": "Geminata",
+        "image_url": "",
+        "y_position":"51",
+        "mechtype": [
+            "Striker"
+        ],
+        "description":"<i>The Geminata is designed to evade and eliminate native flora and fauna analogues in preparation for cradelization.</i>",
+        "mounts": [
+            "Flex",
+            "Main/Aux"
+        ],
+        "stats": {
+            "size": 1,
+            "armor": 1,
+            "hp": 6,
+            "evasion": 10,
+            "edef": 8,
+            "heatcap": 6,
+            "repcap": 4,
+            "sensor_range": 5,
+            "tech_attack": -1,
+            "save": 10,
+            "speed": 5,
+            "sp": 6
+        },
+        "traits": [
+            {
+                "name": "All Terrain",
+                "description": "The Gemata ignores the movement penalty for Difficult Terrain, and gains 1 Accuracy on Engineering Checks to avoid damage from Dangerous Terrain."
+            }
+        ],
+        "core_system": {
+            "name": "Exoadaptive Camouflage",
+            "description": "",
+            "passive_name": "Exoadaptive Camouflage",
+            "passive_effect": "While in Difficult or Dangerous Terrain, this mech gains Soft Cover.",
+            "active_name": "Camouflage Overdrive",
+            "active_effect": "For the remainder of the scene, the first time each turn the Geminata enters Difficult or Dangerous Terrain it gains Hidden even if Engaged.",
+            "tags": [
+                {
+                    "id": "tg_protocol"
+                }
+            ]
+        },
+        "data_type": "frame",
+        "aptitude": {}
+    }
+]

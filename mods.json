@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Defoliant Hive",
+        "sp": 2,
+        "applied_to": [
+            "Melee",
+            "CQB",
+            "Cannon",
+            "Rifle",
+            "Nexus",
+            "Launcher"
+        ],
+        "applied_string": "Any weapon",
+        "source": "RET",
+        "license": "Geminata",
+        "license_level": 1,
+        "effect": "Choose one weapon: on a hit with this weapon, expend a charge as a free action to activate the nanohive and deal 1 bonus damage as Burn and cause the target to suffer the Poisoned condition.",
+        "description": "",
+        "data_type": "mod",
+        "aptitude": {},
+        "tags": [
+            {
+                "id": "tg_mod"
+            },
+            {
+                "id": "tg_limited",
+                "val": 4
+            }
+        ],
+        "added_damage": {
+            "type": "Burn",
+            "val": "1"
+        },
+        "restricted_mounts": [
+            "Auxiliary",
+            "Main",
+            "Heavy",
+            "Superheavy"
+        ]
+    }
+]
