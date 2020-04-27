@@ -52,7 +52,7 @@
         ],
         "source": "RET",
         "license": "Cryptocerus",
-        "license_level": 1,
+        "license_level": 3,
         "effect": {
           "name": "Emergency Subduction",
           "effect_type": "Reaction",
