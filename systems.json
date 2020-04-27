@@ -27,7 +27,7 @@
       },
       {
         "name": "Formic Shield",
-        "type": "System",
+        "type": "Shield",
         "sp": 2,
         "tags": [{"id": "tg_shield"},{"id": "tg_limited","val": 6},{"id": "tg_protocol"}],
         "source": "RET",
@@ -42,11 +42,24 @@
         "name": "Subduction Engine",
         "type": "System",
         "sp": 2,
-        "tags": [{"id": "tg_reaction","val": 1}],
+        "tags": [
+          {
+            "id": "tg_unique"
+          },
+          {
+            "id": "tg_reaction"
+          }
+        ],
         "source": "RET",
         "license": "Cryptocerus",
-        "license_level": 3,
-        "effect": "<b>Trigger:</b> A Turn begins<br><b>Effect:</b> Place a size 1 piece of terrain in a free space adjacent to your mech, it has 5 HP and 5 Evasion",
+        "license_level": 1,
+        "effect": {
+          "name": "Emergency Subduction",
+          "effect_type": "Reaction",
+          "frequency": "1/round",
+          "trigger": "A Turn begins",
+          "detail": "Place a size 1 piece of terrain in a free space adjacent to your mech, it has 5 HP and 5 Evasion."
+        },
         "description": "",
         "data_type": "system",
         "aptitude": {}
@@ -79,13 +92,46 @@
       },
       {
         "name": "Poison Charges",
-        "type": "System",
+        "type": "Deployable",
         "sp": 2,
-        "tags": [{"id": "tg_limited","val": 3}],
+        "tags": [{
+            "id": "tg_limited",
+            "val": 3
+          },
+          {
+            "id": "tg_unique"
+          }
+        ],
         "source": "RET",
         "license": "Geminata",
         "license_level": 3,
-        "effect": "Expend a charge for one of the following effects as a Quick Action<br><br><b>Poison Grenade - Grenade Range 5</b><br>This Grenade creates a Cone 3 area originating in the Target’s space, all characters in the area must make an Agility Save or suffer 2 Burn and Poison<br><br><b>Poison Mine - Mine</b><br>When a character moves into or adjacent this mine’s space, creates a Cone 3 area originating in that character’s space, all characters in the area must make an Agility Save or suffer 2 Burn and Poison",
+        "effect": {
+          "effect_type": "Charge",
+          "charges": [{
+              "name": "Poison Grenade",
+              "charge_type": "Grenade",
+              "range": [{
+                  "type": "Range",
+                  "val": 5
+                },
+                {
+                  "type": "Cone",
+                  "val": 3
+                }
+              ],
+              "detail": "This Grenade creates a Cone 3 area originating in the Target’s space, all characters in the area must make an Agility Save or suffer 2 Burn and Poison."
+            },
+            {
+              "name": "Poison Mine",
+              "charge_type": "Mine",
+              "range": [{
+                "type": "Cone",
+                "val": 3
+              }],
+              "detail": "When a character moves into or adjacent this mine’s space, creates a Cone 3 area originating in that character’s space, all characters in the area must make an Agility Save or suffer 2 Burn and Poison."
+            }
+          ]
+        },
         "description": "",
         "data_type": "system",
         "aptitude": {}
