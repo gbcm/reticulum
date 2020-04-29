@@ -1,7 +1,7 @@
 [
     {
-        "name": "POISON",
+        "name": "POISONED",
         "type": "Condition",
-        "effects": "While suffering the Poisoned Condition, a character suffers 1 Difficulty when attempting to clear Burn, if they have the Biological Tag, they suffer 2 Difficulty. The Poisoned Condition is immediately cleared when a Character is no longer suffering Burn. Some Reticulum Systems only affect Poisoned Targets. "
-      }
+        "effects": "While suffering the Poisoned Condition, a character suffers 1 Difficulty when attempting to clear Burn, if they have the Biological Tag, they suffer 2 Difficulty. The Poisoned Condition is immediately cleared when a Character is no longer suffering Burn. Some Reticulum Systems only affect Poisoned Targets."
+    }
 ]

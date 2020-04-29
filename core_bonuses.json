@@ -1,0 +1,20 @@
+[
+    {
+        "name": "ENDOADAPTIONIST MUTATION",
+        "source": "RET",
+        "effect": "You may choose an additional piece of Pilot Gear representing advanced gene-hacking, it cannot be confiscated from you under normal circumstances",
+        "description": ""
+    },
+    {
+        "name": "NANOBACTERIAL EXPERT",
+        "source": "RET",
+        "effect": "Any source of Burn damage that you cause also causes the target to suffer the Poisoned condition",
+        "description": ""
+    },
+    {
+        "name": "CRADELIZING GENERATOR",
+        "source": "RET",
+        "effect": "You keep a Cradelization die that starts at 1, add 1 to the die every time you create or destroy a piece of terrain. If the die is at 6, on your turn you may reset it to 1 and take a Quick Action as a Free Action. The die persists after a Scene, but resets on a Full Rest.",
+        "description": ""
+    }
+]
