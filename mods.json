@@ -3,12 +3,12 @@
         "name": "Defoliant Hive",
         "sp": 2,
         "applied_to": [
-            "Melee",
-            "CQB",
-            "Cannon",
-            "Rifle",
-            "Nexus",
-            "Launcher"
+            "melee",
+            "cqb",
+            "cannon",
+            "rifle",
+            "nexus",
+            "launcher"
         ],
         "applied_string": "Any weapon",
         "source": "RET",
@@ -30,23 +30,17 @@
         "added_damage": {
             "type": "Burn",
             "val": "1"
-        },
-        "restricted_mounts": [
-            "Auxiliary",
-            "Main",
-            "Heavy",
-            "Superheavy"
-        ]
+        }
     },
     {
         "name": "Mobile Hive Deployment",
         "sp": 2,
         "applied_to": [
-            "CQB",
-            "Cannon",
-            "Rifle",
-            "Nexus",
-            "Launcher"
+            "cqb",
+            "cannon",
+            "rifle",
+            "nexus",
+            "launcher"
         ],
         "applied_string": "Main or Auxiliary Ranged weapon",
         "source": "RET",
@@ -72,10 +66,6 @@
             {
                 "id": "tg_mod"
             }
-        ],
-        "restricted_mounts": [
-            "Auxiliary",
-            "Main"
         ]
     }
 ]
